@@ -1,0 +1,20 @@
+{
+  "name": "webRTC",
+  "version": "1.0.0",
+  "description": "build webrtc to stream video and audio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJackSparrow/webRTC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CJackSparrow/webRTC/issues"
+  },
+  "homepage": "https://github.com/CJackSparrow/webRTC#readme"
+}
