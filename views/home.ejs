@@ -1,8 +1,22 @@
 <html>
 	<head>
+		<title>JackSparrow's stream</title>
 	</head>
 
 	<body>
 		<h1>Jack Sparrow</h1>
+		<video id="localStream" width="300" controls></video>
 	</body>
+	<script type="text/javascript">
+		navigator.mediaDevices.getUserMedia({audio:false,video:true})
+		.then(stream => {
+			const video = document.getElementById('localStream');
+			video.srcObject = stream;
+			video.onloadedmetadata = function(){
+				video.play();
+			};
+		})
+		.catch(err => console.log(err));
+
+	</script>
 </html>
